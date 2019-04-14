@@ -3,6 +3,7 @@ import babel from 'gulp-babel'
 import sourcemaps from 'gulp-sourcemaps'
 import concat from 'gulp-concat'
 import sass from 'gulp-sass'
+import autoprefixer from 'gulp-autoprefixer'
 
 /**
  * You can choose whether to use Dart Sass or Node Sass by setting the
@@ -13,6 +14,18 @@ import sass from 'gulp-sass'
 sass.compiler = require('node-sass')
 
 const browserSync = require('browser-sync').create()
+const autoprefixerOptions = {
+	browsers: [
+		'> 11%',
+		'Chrome >= 10',
+		'Explorer >= 6',
+		'Opera >= 9',
+		'Firefox >= 3.5',
+		'Safari >= 4',
+		'iOS >= 6'
+	],
+	remove: true
+}
 
 task('js', () =>
 	src('./index.js')
@@ -27,6 +40,7 @@ task('scss', () =>
 	src('./index.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
+		.pipe(autoprefixer(autoprefixerOptions))
 		.pipe(concat('bundle.css'))
 		.pipe(sourcemaps.write('.'))
 		.pipe(dest('dist'))
