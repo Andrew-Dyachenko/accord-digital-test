@@ -1,9 +1,5 @@
 {
-  "dependencies": {
-    "gulp-concat": "^2.6.1",
-    "gulp-sourcemaps": "^2.6.5",
-    "sassy-normalize": "^8.0.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
@@ -14,9 +10,18 @@
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0-beta.2",
     "gulp-cli": "^2.1.0",
+    "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "sassy-normalize": "^8.0.4",
+    "stylelint": "9.*",
+    "stylelint-config-sass-guidelines": "^5.4.0",
+    "stylelint-selector-bem-pattern": "^2.1.0"
+  },
+  "resolutions": {
+    "stylelint-selector-bem-pattern/stylelint": "9.*"
   },
   "name": "accord-digital-test",
   "version": "1.0.0",
@@ -27,6 +32,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "./node_modules/gulp/bin/gulp.js"
+    "start": "./node_modules/gulp/bin/gulp.js",
+    "scss-fix": "./node_modules/stylelint/bin/stylelint.js --config ./.stylelintrc.yml --fix ./*.scss"
   }
 }

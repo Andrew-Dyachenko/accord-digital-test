@@ -3,8 +3,10 @@ import babel from 'gulp-babel'
 import sourcemaps from 'gulp-sourcemaps'
 import concat from 'gulp-concat'
 import sass from 'gulp-sass'
+import nodeSass from 'node-sass'
 import autoprefixer from 'gulp-autoprefixer'
 import uglify from 'gulp-uglify'
+import { create as createBrowserSync } from 'browser-sync'
 
 /**
  * You can choose whether to use Dart Sass or Node Sass by setting the
@@ -12,9 +14,9 @@ import uglify from 'gulp-uglify'
  * but it's strongly recommended that you set it explicitly for
  * forwards-compatibility in case the default ever changes.
  */
-sass.compiler = require('node-sass')
+sass.compiler = nodeSass
 
-const browserSync = require('browser-sync').create()
+const browserSync = createBrowserSync()
 const autoprefixerOptions = {
 	browsers: [
 		'> 11%',
@@ -68,7 +70,6 @@ task('serve', done => {
 })
 
 function watchTasks() {
-	console.log('launched!')
 	watch('./index.js')
 		.on('all', series('js', browserSync.reload))
 
