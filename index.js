@@ -1,5 +1,5 @@
 'use strict'
 
-const f = () => 'Hello'
-const a = `${Date() + f()}`
-console.log('Hello word')
+document.addEventListener('DOMContentLoaded', () => {
+	console.log('Hello world!')
+})
