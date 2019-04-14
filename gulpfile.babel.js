@@ -74,6 +74,9 @@ function watchTasks() {
 
 	watch('./index.scss')
 		.on('all', series('scss', browserSync.reload))
+
+	watch('./index.html')
+		.on('all', series(browserSync.reload))
 }
 
 task('default', series('js', 'scss', 'serve', watchTasks))
