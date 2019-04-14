@@ -4,6 +4,7 @@ import sourcemaps from 'gulp-sourcemaps'
 import concat from 'gulp-concat'
 import sass from 'gulp-sass'
 import autoprefixer from 'gulp-autoprefixer'
+import uglify from 'gulp-uglify'
 
 /**
  * You can choose whether to use Dart Sass or Node Sass by setting the
@@ -27,14 +28,24 @@ const autoprefixerOptions = {
 	remove: true
 }
 
-task('js', () =>
-	src('./index.js')
+task('js', () => {
+	const js = src('./index.js')
 		.pipe(sourcemaps.init())
 		.pipe(babel())
 		.pipe(concat('bundle.js'))
 		.pipe(sourcemaps.write('.'))
 		.pipe(dest('dist'))
-)
+
+	const jsUglify = src('./index.js')
+		.pipe(sourcemaps.init())
+		.pipe(babel())
+		.pipe(uglify())
+		.pipe(concat('bundle.min.js'))
+		.pipe(sourcemaps.write('.'))
+		.pipe(dest('dist'))
+
+	return Promise.all([js, jsUglify])
+})
 
 task('scss', () =>
 	src('./index.scss')
