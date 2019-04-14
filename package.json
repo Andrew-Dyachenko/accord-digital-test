@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "gulp-concat": "^2.6.1",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "sassy-normalize": "^8.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
