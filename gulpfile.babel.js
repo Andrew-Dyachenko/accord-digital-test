@@ -73,7 +73,7 @@ function watchTasks() {
 	watch('./index.js')
 		.on('all', series('js', browserSync.reload))
 
-	watch('./index.scss')
+	watch(['./**.scss', './**/*.scss'])
 		.on('all', series('scss', browserSync.reload))
 
 	watch('./index.html')
