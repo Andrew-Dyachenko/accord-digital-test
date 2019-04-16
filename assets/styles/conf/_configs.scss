@@ -1,0 +1,32 @@
+@import '../mix/fonts';
+
+// ----------  Fonts config  ----------
+
+$font-name: 'Helvetica Neue';
+$font-path: '../assets/fonts/HelveticaNeue/';
+
+// ----------  Helvetica Neue  ----------
+
+@include font-face($font-name, 'Helvetica Neue Thin Italic',        'HelveticaNeue-ThinItalic',       '#{$font-path}HelveticaNeue-ThinItalic',       italic, 100);
+@include font-face($font-name, 'Helvetica Neue Thin',               'HelveticaNeue-Thin',             '#{$font-path}HelveticaNeue-Thin',             normal, 100);
+
+@include font-face($font-name, 'Helvetica Neue Ultra Light Italic', 'HelveticaNeue-UltraLightItalic', '#{$font-path}HelveticaNeue-UltraLightItalic', italic, 200);
+@include font-face($font-name, 'Helvetica Neue Ultra Light',        'HelveticaNeue-UltraLight',       '#{$font-path}HelveticaNeue-UltraLight',       normal, 200);
+
+@include font-face($font-name, 'Helvetica Neue Light Italic',       'HelveticaNeue-LightItalic',      '#{$font-path}HelveticaNeue-LightItalic',      italic, 300);
+@include font-face($font-name, 'Helvetica Neue Light',              'HelveticaNeue-Light',            '#{$font-path}HelveticaNeue-Light',            normal, 300);
+
+@include font-face($font-name, 'Helvetica Neue Italic',             'HelveticaNeue-Italic',           '#{$font-path}HelveticaNeue-Italic',           italic, 400);
+@include font-face($font-name, 'Helvetica Neue Roman',              'HelveticaNeue-Roman',            '#{$font-path}HelveticaNeue-Roman',            normal, 400);
+
+@include font-face($font-name, 'Helvetica Neue Medium Italic',      'HelveticaNeue-MediumItalic',     '#{$font-path}HelveticaNeue-MediumItalic',     italic, 500);
+@include font-face($font-name, 'Helvetica Neue Medium',             'HelveticaNeue-Medium',           '#{$font-path}HelveticaNeue-Medium',           normal, 500);
+
+@include font-face($font-name, 'Helvetica Neue Bold Italic',        'HelveticaNeue-BoldItalic',       '#{$font-path}HelveticaNeue-BoldItalic',       italic, 700);
+@include font-face($font-name, 'Helvetica Neue Bold',               'HelveticaNeue-Bold',             '#{$font-path}HelveticaNeue-Bold',             normal, 700);
+
+@include font-face($font-name, 'Helvetica Neue Heavy Italic',       'HelveticaNeue-HeavyItalic',      '#{$font-path}HelveticaNeue-HeavyItalic',      italic, 800);
+@include font-face($font-name, 'Helvetica Neue Heavy',              'HelveticaNeue-Heavy',            '#{$font-path}HelveticaNeue-Heavy',            normal, 800);
+
+@include font-face($font-name, 'Helvetica Neue Black Italic',       'HelveticaNeue-BlackItalic',      '#{$font-path}HelveticaNeue-BlackItalic',      italic, 900);
+@include font-face($font-name, 'Helvetica Neue Black',              'HelveticaNeue-Black',            '#{$font-path}HelveticaNeue-Black',            normal, 900);
