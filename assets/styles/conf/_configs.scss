@@ -1,3 +1,15 @@
+$font-family: 'Helvetica Neue', sans-serif;
+$black: #000;
+$white: #fff;
+$font-root: 16px;
+$global-padding: 16px;
+$global-margin: 16px;
+$gutter-width: 16px;
+
+$s: 320px;
+$m: 600px;
+$l: 1705px; // Mockup content width
+
 @import '../mix/fonts';
 
 // ----------  Fonts config  ----------
