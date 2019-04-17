@@ -1,14 +1,44 @@
 @import './node_modules/sassy-normalize/normalize';
 @import './assets/styles/conf/configs';
-
-$white: #fff;
+@import './assets/styles/util/strip-unit';
+@import './assets/styles/func/fluid';
 
 html {
 	height: 100%;
 }
 body {
 	background-color: $white;
-	display: flex;
-	font-family: 'Helvetica Neue', sans-serif;
+	font-family: $font-family;
 	min-height: 100%;
+}
+* {
+	box-sizing: content-box;
+}
+%container {
+	margin: 0 auto;
+	max-width: $l + $global-padding * 2;
+	padding: 0 $global-padding;
+}
+.header {
+	min-height: 124px;
+	&__logo {
+		$font-size-min: (50px / 100 * 38.2);
+		$font-size-max: 50px;
+		color: $black;
+		font-size: $font-size-min;
+		font-weight: 700;
+		letter-spacing: 1px;
+		line-height: 1;
+
+		@media (min-width: $s) {
+			font-size: fluid($font-size-min, $font-size-max, $s, $l);
+		}
+
+		@media (min-width: $l) {
+			font-size: $font-size-max;
+		}
+	}
+	&__container {
+		@extend %container;
+	}
 }
