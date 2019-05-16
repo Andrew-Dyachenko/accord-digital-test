@@ -1,8 +1,8 @@
-@keyframes bgLaunch {
+@keyframes carret-appearance {
 	from {
-		background-color: $white;
+		height: 0;
 	}
 	to {
-		background-color: $catskill-white;
+		height: 100%;
 	}
 }

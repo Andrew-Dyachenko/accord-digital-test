@@ -1,0 +1,88 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+	&__row {
+		$min-height: (124px / 100 * strip-unit($fibo-asymp-xl-percentage));
+		$max-height: 124px;
+		display: flex;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		min-height: $min-height;
+		position: relative;
+
+		&:not(:empty) {
+			margin: 0 #{-$gutter-width / 2};
+		}
+
+		@media (min-width: $s) {
+			min-height: fluid($min-height, $max-height, $s, $l);
+		}
+
+		@media (min-width: $l) {
+			min-height: $max-height;
+		}
+	}
+	&__link {
+		$font-size-min: (27px / 100 * strip-unit($fibo-asymp-xxl-percentage));
+		$font-size-max: 27px;
+		align-items: center;
+		color: $black;
+		display: flex;
+		flex-grow: 1;
+		font-size: $font-size-min;
+		font-weight: 700;
+		font-weight: 400;
+		justify-content: center;
+		line-height: (29.07 / 27);
+		padding: $fibo-asymp-xxxl + em $gutter-width / 2;
+		text-decoration: none;
+
+		&--lead {
+			font-weight: 700;
+		}
+
+		@media (min-width: $s) {
+			font-size: fluid($font-size-min, $font-size-max, $s, $l);
+		}
+
+		@media (min-width: $l) {
+			font-size: $font-size-max;
+		}
+	}
+
+	&__carret {
+		animation-delay: .3s;
+		animation-duration: .3s;
+		animation-fill-mode: backwards;
+		animation-name: carret-appearance;
+		animation-timing-function: ease-out;
+		background-color: $white;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		transition-duration: .3s;
+		transition-property: left, width;
+		transition-timing-function: ease-out;
+
+		&-rails {
+			$height-min: (22px / 100 * strip-unit($fibo-asymp-xxl-percentage));
+			$height-max: 22px;
+			align-items: flex-end;
+			bottom: 0;
+			display: flex;
+			height: 0;
+			left: 0;
+			position: absolute;
+			right: 0;
+
+			@media (min-width: $m) {
+				height: fluid($height-min, $height-max, $s, $l);
+			}
+
+			@media (min-width: $l) {
+				height: $height-max;
+			}
+		}
+	}
+}

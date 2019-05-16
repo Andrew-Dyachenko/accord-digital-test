@@ -33,6 +33,6 @@
   "private": false,
   "scripts": {
     "start": "./node_modules/gulp/bin/gulp.js",
-    "scss-fix": "./node_modules/stylelint/bin/stylelint.js --config ./.stylelintrc.yml --fix ./*.scss"
+    "scss-fix": "./node_modules/stylelint/bin/stylelint.js --config ./.stylelintrc.yml --fix ./**/*.scss"
   }
 }

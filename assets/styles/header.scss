@@ -1,0 +1,65 @@
+.header {
+	$header: &;
+	background-color: $energy-yellow;
+
+	&__row {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		&:not(:empty) {
+			margin: 0 #{-$gutter-width};
+		}
+
+		> * {
+			padding: 0 $gutter-width;
+		}
+	}
+
+	&__logo {
+		$font-size-min: (50px / 100 * ($fibo-asymp-xxl * 100));
+		$font-size-max: 50px;
+		color: $black;
+		font-size: $font-size-min;
+		font-weight: 700;
+		letter-spacing: 1px;
+		line-height: 1;
+		margin: 0 auto;
+		padding-bottom: $global-padding;
+		padding-top: $global-padding;
+		text-decoration: none;
+		white-space: nowrap;
+
+		@media (min-width: $s) {
+			font-size: fluid($font-size-min, $font-size-max, $s, $l);
+		}
+
+		@media (min-width: $l) {
+			font-size: $font-size-max;
+		}
+	}
+
+	&__container {
+		@extend %container;
+	}
+
+	&__menu {
+		align-self: stretch;
+		flex-grow: 1;
+
+		/* &:not(:empty) {
+			$margin-left-min: 0;
+			$margin-left-max: 27px;
+			margin-left: $margin-left-min;
+
+			@media (min-width: $s) {
+				margin-left: fluid($margin-left-min, $margin-left-max, $s, $l);
+			}
+
+			@media (min-width: $l) {
+				margin-left: $margin-left-max;
+			}
+		} */
+	}
+}

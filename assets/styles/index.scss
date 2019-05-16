@@ -1,0 +1,22 @@
+@import './node_modules/sassy-normalize/normalize';
+@import './assets/styles/conf/configs';
+@import './assets/styles/util/strip-unit';
+@import './assets/styles/func/fluid';
+@import './anim/animations';
+
+@import './header';
+@import './menu';
+@import './main.scss';
+
+html {
+	height: 100%;
+}
+body {
+	background-color: $white;
+	font-family: $font-family;
+	min-height: 100%;
+}
+
+* {
+	box-sizing: content-box;
+}

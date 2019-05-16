@@ -50,7 +50,7 @@ task('js', () => {
 })
 
 task('scss', () =>
-	src('./index.scss')
+	src('./assets/styles/index.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer(autoprefixerOptions))
