@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Accord Digital Test</title>
+		<link rel="stylesheet" href="./dist/bundle.css" />
+		<script src="./dist/bundle.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<a href="/" class="header__logo">
+						РЕГИДРОН БИО
+					</a>
+					<nav class="menu header__menu">
+						<div class="menu__row">
+							<a href="#" class="menu__link menu__link--current">причины</a>
+							<a href="#" class="menu__link">помощь</a>
+							<a href="#" class="menu__link">применение</a>
+							<a href="#" class="menu__link">преимущества</a>
+							<a href="#" class="menu__link">дополнительно</a>
+							<a href="#" class="menu__link menu__link--lead">купить</a>
+							<div class="menu__carret-rails"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<section class="regidron-bio">
+					<div class="regidron-bio__main">
+						<div class="regidron-bio__left">
+							<img src="./images/spinner.gif" data-src="./images/regidron-bio.png" class="regidron-bio__img" alt="Regidron Bio" />
+						</div>
+						<div class="regidron-bio__right">
+							<h2 class="regidron-bio__title">
+								комплексное решение при детской диарее
+							</h2>
+							<h5 class="regidron-bio__subtitle">
+								комплексное решение при детской диарее
+							</h5>
+							<table class="features main__features">
+								<tbody>
+									<tr class="features__item">
+										<td class="features__media">
+											<img src="./images/spinner.gif" data-src="./images/clock.png" alt="Water's drop" class="features__img">
+										</td>
+										<td class="features__info">
+											сокращает
+											продолжительность
+											и выраженность диареи
+										</td>
+									</tr>
+									<tr class="features__item">
+										<td class="features__media">
+											<img src="./images/spinner.gif" data-src="./images/drop.png" alt="Water's drop" class="features__img">
+										</td>
+										<td class="features__info">
+											восстанавливает
+											водно-солевой
+											баланс
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="regidron-bio__subinfo">
+						<strong>Регидрон Био</strong> – современное комбинированное средство <strong>для детей от трёх лет</strong><br class="l-visible" />
+						или с массой тела от 12 кг, для устранения и профилактики<br class="l-visible" />
+						обезвоживания и облегчения диареи и рвоты
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
