@@ -47,6 +47,23 @@ const menuCarret = () => {
 	window.onresize = () => updateCarret(carret, current)
 }
 
+const asyncImages = () => {
+	for(let i = 0; i < document.images.length; i++) {
+		const img = document.images[i]
+		const data_src = img.getAttribute('data-src')
+
+		// Про­пус­тить изо­бра­же­ния без data-src
+		if (!data_src) continue
+
+		// Обес­пе­чить за­груз­ку смен­но­го изо­бра­же­ния в кэш
+		(new Image()).src = data_src
+
+		// Установить загруженное изображение вместо прелоадера
+		img.src = data_src
+	}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	menuCarret()
+	asyncImages()
 })
