@@ -1,0 +1,1005 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+     -moz-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-ThinItalic.eot");
+  src: local("Helvetica Neue Thin Italic"), local("HelveticaNeue-ThinItalic"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-ThinItalic.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-ThinItalic.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-ThinItalic.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-ThinItalic.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-ThinItalic") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-Thin.eot");
+  src: local("Helvetica Neue Thin"), local("HelveticaNeue-Thin"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Thin.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Thin.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Thin.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-Thin") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLightItalic.eot");
+  src: local("Helvetica Neue Ultra Light Italic"), local("HelveticaNeue-UltraLightItalic"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLightItalic.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLightItalic.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLightItalic.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLightItalic.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLightItalic") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLight.eot");
+  src: local("Helvetica Neue Ultra Light"), local("HelveticaNeue-UltraLight"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLight.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLight.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLight.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLight.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLight.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-UltraLight") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-LightItalic.eot");
+  src: local("Helvetica Neue Light Italic"), local("HelveticaNeue-LightItalic"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-LightItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-LightItalic.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-LightItalic.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-LightItalic.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-LightItalic.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-LightItalic") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-Light.eot");
+  src: local("Helvetica Neue Light"), local("HelveticaNeue-Light"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Light.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Light.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Light.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Light.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-Light") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-Italic.eot");
+  src: local("Helvetica Neue Italic"), local("HelveticaNeue-Italic"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Italic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Italic.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Italic.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Italic.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Italic.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-Italic") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-Roman.eot");
+  src: local("Helvetica Neue Roman"), local("HelveticaNeue-Roman"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Roman.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Roman.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Roman.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Roman.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Roman.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-Roman") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-MediumItalic.eot");
+  src: local("Helvetica Neue Medium Italic"), local("HelveticaNeue-MediumItalic"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-MediumItalic.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-MediumItalic.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-MediumItalic.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-MediumItalic.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-MediumItalic") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-Medium.eot");
+  src: local("Helvetica Neue Medium"), local("HelveticaNeue-Medium"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Medium.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Medium.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Medium.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-Medium") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-BoldItalic.eot");
+  src: local("Helvetica Neue Bold Italic"), local("HelveticaNeue-BoldItalic"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BoldItalic.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BoldItalic.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BoldItalic.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BoldItalic.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-BoldItalic") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-Bold.eot");
+  src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Bold.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Bold.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Bold.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Bold.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-Bold") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-HeavyItalic.eot");
+  src: local("Helvetica Neue Heavy Italic"), local("HelveticaNeue-HeavyItalic"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-HeavyItalic.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-HeavyItalic.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-HeavyItalic.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-HeavyItalic.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-HeavyItalic") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-Heavy.eot");
+  src: local("Helvetica Neue Heavy"), local("HelveticaNeue-Heavy"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Heavy.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Heavy.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Heavy.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Heavy.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Heavy.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-Heavy") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-BlackItalic.eot");
+  src: local("Helvetica Neue Black Italic"), local("HelveticaNeue-BlackItalic"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BlackItalic.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BlackItalic.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BlackItalic.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-BlackItalic.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-BlackItalic") format("svg"); }
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/fonts/HelveticaNeue/HelveticaNeue-Black.eot");
+  src: local("Helvetica Neue Black"), local("HelveticaNeue-Black"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Black.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Black.woff2") format("woff2"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Black.woff") format("woff"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Black.ttf") format("truetype"), url("../assets/fonts/HelveticaNeue/HelveticaNeue-Black.svg#../assets/fonts/HelveticaNeue/HelveticaNeue-Black") format("svg"); }
+
+.header__container, .main__container {
+  margin: 0 auto;
+  max-width: 1632px;
+  padding: 0 16px; }
+
+@-webkit-keyframes carret-appearance {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+
+@-moz-keyframes carret-appearance {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+
+@-o-keyframes carret-appearance {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+
+@keyframes carret-appearance {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+
+@-webkit-keyframes dilutionIn {
+  from {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    opacity: 0;
+    -webkit-transform: scale(0.61803);
+            transform: scale(0.61803); }
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-moz-keyframes dilutionIn {
+  from {
+    filter: blur(5px);
+    opacity: 0;
+    -moz-transform: scale(0.61803);
+         transform: scale(0.61803); }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    -moz-transform: scale(1);
+         transform: scale(1); } }
+
+@-o-keyframes dilutionIn {
+  from {
+    filter: blur(5px);
+    opacity: 0;
+    -o-transform: scale(0.61803);
+       transform: scale(0.61803); }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    -o-transform: scale(1);
+       transform: scale(1); } }
+
+@keyframes dilutionIn {
+  from {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    opacity: 0;
+    -webkit-transform: scale(0.61803);
+       -moz-transform: scale(0.61803);
+         -o-transform: scale(0.61803);
+            transform: scale(0.61803); }
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1); } }
+
+.header {
+  background-color: #f7d14c; }
+  .header__row {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header__row:not(:empty) {
+      margin: 0 -16px; }
+    .header__row > * {
+      padding: 0 16px; }
+  .header__logo {
+    color: #000;
+    font-size: 19.0985px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-decoration: none;
+    white-space: nowrap; }
+    @media (min-width: 320px) {
+      .header__logo {
+        font-size: -webkit-calc(50px + (30.9015) * ((100vw - 1600px) / 1000));
+        font-size: -moz-calc(50px + (30.9015) * ((100vw - 1600px) / 1000));
+        font-size: calc(50px + (30.9015) * ((100vw - 1600px) / 1000)); } }
+    @media (min-width: 1600px) {
+      .header__logo {
+        font-size: 50px; } }
+  .header__menu {
+    -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+            align-self: stretch;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+
+.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .menu__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 14.63572px;
+    position: relative; }
+    @media (min-width: 320px) {
+      .menu__row {
+        min-height: -webkit-calc(124px + (109.36428) * ((100vw - 1600px) / 1280));
+        min-height: -moz-calc(124px + (109.36428) * ((100vw - 1600px) / 1280));
+        min-height: calc(124px + (109.36428) * ((100vw - 1600px) / 1280)); } }
+    @media (min-width: 768px) {
+      .menu__row:not(:empty) {
+        margin: 0 -8px; } }
+    @media (min-width: 1600px) {
+      .menu__row {
+        min-height: 124px; } }
+  .menu__link {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+       -moz-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 10.31319px;
+    font-weight: 700;
+    font-weight: 400;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 1.07667;
+    padding: 0.61803em 8px;
+    text-decoration: none; }
+    .menu__link--lead {
+      font-weight: 700; }
+    @media (min-width: 320px) {
+      .menu__link {
+        font-size: -webkit-calc(27px + (16.68681) * ((100vw - 1600px) / 1280));
+        font-size: -moz-calc(27px + (16.68681) * ((100vw - 1600px) / 1280));
+        font-size: calc(27px + (16.68681) * ((100vw - 1600px) / 1280)); } }
+    @media (min-width: 1600px) {
+      .menu__link {
+        font-size: 27px; } }
+  .menu__carret {
+    -webkit-animation-delay: .3s;
+       -moz-animation-delay: .3s;
+         -o-animation-delay: .3s;
+            animation-delay: .3s;
+    -webkit-animation-duration: .3s;
+       -moz-animation-duration: .3s;
+         -o-animation-duration: .3s;
+            animation-duration: .3s;
+    -webkit-animation-fill-mode: backwards;
+       -moz-animation-fill-mode: backwards;
+         -o-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-animation-name: carret-appearance;
+       -moz-animation-name: carret-appearance;
+         -o-animation-name: carret-appearance;
+            animation-name: carret-appearance;
+    -webkit-animation-timing-function: ease-out;
+       -moz-animation-timing-function: ease-out;
+         -o-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    -webkit-transition-duration: .3s;
+       -moz-transition-duration: .3s;
+         -o-transition-duration: .3s;
+            transition-duration: .3s;
+    -webkit-transition-property: left, width;
+    -o-transition-property: left, width;
+    -moz-transition-property: left, width;
+    transition-property: left, width;
+    -webkit-transition-timing-function: ease-out;
+       -moz-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out; }
+    .menu__carret-rails {
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+         -moz-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      bottom: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 0;
+      left: 0;
+      position: absolute;
+      right: 0; }
+      @media (min-width: 768px) {
+        .menu__carret-rails {
+          height: -webkit-calc(22px + (13.59666) * ((100vw - 1600px) / 1280));
+          height: -moz-calc(22px + (13.59666) * ((100vw - 1600px) / 1280));
+          height: calc(22px + (13.59666) * ((100vw - 1600px) / 1280)); } }
+      @media (min-width: 1600px) {
+        .menu__carret-rails {
+          height: 22px; } }
+
+.main__container {
+  padding-bottom: 16px;
+  padding-top: 16px; }
+
+.main__features {
+  -webkit-animation-delay: .8s;
+     -moz-animation-delay: .8s;
+       -o-animation-delay: .8s;
+          animation-delay: .8s;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+     -moz-animation-fill-mode: backwards;
+       -o-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: dilutionIn;
+     -moz-animation-name: dilutionIn;
+       -o-animation-name: dilutionIn;
+          animation-name: dilutionIn;
+  -webkit-animation-timing-function: ease-out;
+     -moz-animation-timing-function: ease-out;
+       -o-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-transform-origin: center left;
+     -moz-transform-origin: center left;
+      -ms-transform-origin: center left;
+       -o-transform-origin: center left;
+          transform-origin: center left; }
+
+.features {
+  table-layout: fixed;
+  width: 100%; }
+  .features__item:not(:last-child) > td,
+  .features__item:not(:last-child) > th {
+    padding-bottom: 28.64775px; }
+    @media (min-width: 320px) {
+      .features__item:not(:last-child) > td,
+      .features__item:not(:last-child) > th {
+        padding-bottom: -webkit-calc(75px + (46.35225) * ((100vw - 1600px) / 1000));
+        padding-bottom: -moz-calc(75px + (46.35225) * ((100vw - 1600px) / 1000));
+        padding-bottom: calc(75px + (46.35225) * ((100vw - 1600px) / 1000)); } }
+    @media (min-width: 1600px) {
+      .features__item:not(:last-child) > td,
+      .features__item:not(:last-child) > th {
+        padding-bottom: 75px; } }
+  .features__media {
+    padding: 0;
+    text-align: center;
+    vertical-align: middle; }
+    @media (min-width: 960px) {
+      .features__media {
+        width: 116px; } }
+  .features__info {
+    color: #000;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 23.48514px;
+    font-weight: 700;
+    line-height: 1.26667;
+    padding-bottom: 0;
+    padding-left: 22.53623px;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+    vertical-align: middle;
+    width: 85%; }
+    @media (min-width: 320px) {
+      .features__info {
+        font-size: -webkit-calc(38px + (14.51486) * ((100vw - 1600px) / 1000));
+        font-size: -moz-calc(38px + (14.51486) * ((100vw - 1600px) / 1000));
+        font-size: calc(38px + (14.51486) * ((100vw - 1600px) / 1000));
+        padding-left: -webkit-calc(59px + (36.46377) * ((100vw - 1600px) / 1000));
+        padding-left: -moz-calc(59px + (36.46377) * ((100vw - 1600px) / 1000));
+        padding-left: calc(59px + (36.46377) * ((100vw - 1600px) / 1000)); } }
+    @media (min-width: 960px) {
+      .features__info {
+        width: auto; } }
+    @media (min-width: 1600px) {
+      .features__info {
+        font-size: 38px;
+        padding-left: 59px; } }
+  .features__img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+
+.regidron-bio__img {
+  max-width: 100%; }
+
+.regidron-bio__main {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  @media (min-width: 960px) {
+    .regidron-bio__main {
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; } }
+
+.regidron-bio__left {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-delay: .3s;
+     -moz-animation-delay: .3s;
+       -o-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+     -moz-animation-fill-mode: backwards;
+       -o-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: dilutionIn;
+     -moz-animation-name: dilutionIn;
+       -o-animation-name: dilutionIn;
+          animation-name: dilutionIn;
+  -webkit-animation-timing-function: ease-out;
+     -moz-animation-timing-function: ease-out;
+       -o-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  @media (min-width: 960px) {
+    .regidron-bio__left {
+      width: 75%; } }
+
+.regidron-bio__right {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: 16px; }
+  @media (min-width: 960px) {
+    .regidron-bio__right {
+      margin-left: -201px; } }
+  @media (min-width: 1600px) {
+    .regidron-bio__right {
+      margin-bottom: 0; } }
+
+.regidron-bio__title {
+  -webkit-animation-delay: .6s;
+     -moz-animation-delay: .6s;
+       -o-animation-delay: .6s;
+          animation-delay: .6s;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+     -moz-animation-fill-mode: backwards;
+       -o-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: dilutionIn;
+     -moz-animation-name: dilutionIn;
+       -o-animation-name: dilutionIn;
+          animation-name: dilutionIn;
+  -webkit-animation-timing-function: ease-out;
+     -moz-animation-timing-function: ease-out;
+       -o-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  color: #000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 19.0985px;
+  font-weight: 700;
+  line-height: 1.08;
+  margin: 0 0 .22em;
+  -webkit-transform-origin: center left;
+     -moz-transform-origin: center left;
+      -ms-transform-origin: center left;
+       -o-transform-origin: center left;
+          transform-origin: center left; }
+  @media (min-width: 320px) {
+    .regidron-bio__title {
+      font-size: -webkit-calc(50px + (30.9015) * ((100vw - 1600px) / 1280));
+      font-size: -moz-calc(50px + (30.9015) * ((100vw - 1600px) / 1280));
+      font-size: calc(50px + (30.9015) * ((100vw - 1600px) / 1280)); } }
+  @media (min-width: 1600px) {
+    .regidron-bio__title {
+      font-size: 50px; } }
+
+.regidron-bio__subtitle {
+  -webkit-animation-delay: .6s;
+     -moz-animation-delay: .6s;
+       -o-animation-delay: .6s;
+          animation-delay: .6s;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+     -moz-animation-fill-mode: backwards;
+       -o-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-name: dilutionIn;
+     -moz-animation-name: dilutionIn;
+       -o-animation-name: dilutionIn;
+          animation-name: dilutionIn;
+  -webkit-animation-timing-function: ease-out;
+     -moz-animation-timing-function: ease-out;
+       -o-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  color: #000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12.3606px;
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 0 0 .5em;
+  -webkit-transform-origin: center left;
+     -moz-transform-origin: center left;
+      -ms-transform-origin: center left;
+       -o-transform-origin: center left;
+          transform-origin: center left; }
+  @media (min-width: 320px) {
+    .regidron-bio__subtitle {
+      font-size: -webkit-calc(20px + (7.6394) * ((100vw - 1600px) / 1280));
+      font-size: -moz-calc(20px + (7.6394) * ((100vw - 1600px) / 1280));
+      font-size: calc(20px + (7.6394) * ((100vw - 1600px) / 1280)); } }
+  @media (min-width: 1600px) {
+    .regidron-bio__subtitle {
+      font-size: 20px;
+      margin-bottom: 0; } }
+
+@media (min-width: 320px) {
+  .regidron-bio {
+    padding-top: -webkit-calc(116px + (100) * ((100vw - 1600px) / 1280));
+    padding-top: -moz-calc(116px + (100) * ((100vw - 1600px) / 1280));
+    padding-top: calc(116px + (100) * ((100vw - 1600px) / 1280)); } }
+
+@media (min-width: 1600px) {
+  .regidron-bio {
+    padding-top: 116px; } }
+
+.regidron-bio__subinfo {
+  color: #000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12.3606px;
+  line-height: 1.15; }
+  @media (min-width: 320px) {
+    .regidron-bio__subinfo {
+      font-size: -webkit-calc(20px + (7.6394) * ((100vw - 1600px) / 1280));
+      font-size: -moz-calc(20px + (7.6394) * ((100vw - 1600px) / 1280));
+      font-size: calc(20px + (7.6394) * ((100vw - 1600px) / 1280)); } }
+  @media (min-width: 960px) {
+    .regidron-bio__subinfo {
+      padding-left: 5.603448276%; } }
+  @media (min-width: 1600px) {
+    .regidron-bio__subinfo {
+      font-size: 20px; } }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  min-height: 100%; }
+
+* {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box; }
+
+@media (max-width: 959px) {
+  .l-visible {
+    display: none; } }
+
+/*# sourceMappingURL=bundle.css.map */
