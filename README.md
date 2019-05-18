@@ -29,6 +29,9 @@ After completing the installation of the necessary dependencies, you can run the
 yarn start
 ```
 
+### Preview
+![Accord Digital Test Preview](/images/preview.png)
+
 ### Fixing
 #### SCSS
 If you encounter SCSS style error warnings in the console, use the `yarn scss-fix` command to fix most errors.
