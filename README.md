@@ -31,4 +31,4 @@ yarn start
 
 ### Fixing
 #### SCSS
-При возникновении в консоли предупреждений об ошибках в стилях SCSS используйте команду `yarn scss-fix`, которая исправит большинство ошибок
+If you encounter SCSS style error warnings in the console, use the `yarn scss-fix` command to fix most errors.
