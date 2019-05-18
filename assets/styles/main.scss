@@ -4,4 +4,13 @@
 		padding-bottom: $global-padding;
 		padding-top: $global-padding;
 	}
+
+	&__features {
+		animation-delay: .8s;
+		animation-duration: 1s;
+		animation-fill-mode: backwards;
+		animation-name: dilutionIn;
+		animation-timing-function: ease-out;
+		transform-origin: center left;
+	}
 }

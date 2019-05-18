@@ -6,3 +6,16 @@
 		height: 100%;
 	}
 }
+
+@keyframes dilutionIn {
+	from {
+		filter: blur(5px);
+		opacity: 0;
+		transform: scale($fibo-asymp-xxxl);
+	}
+	to {
+		filter: blur(0);
+		opacity: 1;
+		transform: scale(1);
+	}
+}
