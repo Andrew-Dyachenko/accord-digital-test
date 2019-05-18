@@ -1,0 +1,108 @@
+.regidron-bio {
+	$padding-top-max: 116px;
+	$padding-top-min: $global-padding;
+
+	&__img {
+		max-width: 100%;
+	}
+
+	&__main {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+
+		@media (min-width: $l) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	&__left {
+		flex-shrink: 0;
+		width: 100%;
+
+		@media (min-width: $l) {
+			width: 75%;
+		}
+	}
+
+	&__right {
+		flex-grow: 1;
+		margin-bottom: $global-margin;
+
+		@media (min-width: $l) {
+			margin-left: -201px;
+		}
+
+		@media (min-width: $xxl) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		$font-size-max: 50px;
+		$font-size-min: ($font-size-max / 100 * ($fibo-asymp-xxl * 100));
+		color: $black;
+		font-family: $font-family;
+		font-size: $font-size-min;
+		font-weight: 700;
+		line-height: (54 / 50);
+		margin: 0 0 .22em;
+
+		@media (min-width: $xxs) {
+			font-size: fluid($font-size-min, $font-size-max, $xxs, $xxl);
+		}
+
+		@media (min-width: $xxl) {
+			font-size: $font-size-max;
+		}
+	}
+
+	&__subtitle {
+		$font-size-max: 20px;
+		$font-size-min: ($font-size-max / 100 * ($fibo-asymp-xxxl * 100));
+		color: $black;
+		font-family: $font-family;
+		font-size: $font-size-min;
+		font-weight: 500;
+		line-height: (23 / 20);
+		margin: 0 0 .5em;
+
+		@media (min-width: $xxs) {
+			font-size: fluid($font-size-min, $font-size-max, $xxs, $xxl);
+		}
+
+		@media (min-width: $xxl) {
+			font-size: $font-size-max;
+			margin-bottom: 0;
+		}
+	}
+
+	@media (min-width: $xxs) {
+		padding-top: fluid($padding-top-min, $padding-top-max, $xxs, $xxl);
+	}
+
+	@media (min-width: $xxl) {
+		padding-top: $padding-top-max;
+	}
+
+	&__subinfo {
+		$font-size-max: 20px;
+		$font-size-min: ($font-size-max / 100 * ($fibo-asymp-xxxl * 100));
+		color: $black;
+		font-family: $font-family;
+		font-size: $font-size-min;
+		line-height: (23 / 20);
+
+		@media (min-width: $xxs) {
+			font-size: fluid($font-size-min, $font-size-max, $xxs, $xxl);
+		}
+
+		@media (min-width: $l) {
+			padding-left: 5.603448276%;
+		}
+
+		@media (min-width: $xxl) {
+			font-size: $font-size-max;
+		}
+	}
+}

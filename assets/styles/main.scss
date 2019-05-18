@@ -1,5 +1,7 @@
 .main {
 	&__container {
 		@extend %container;
+		padding-bottom: $global-padding;
+		padding-top: $global-padding;
 	}
 }

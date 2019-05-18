@@ -11,15 +11,17 @@
 		min-height: $min-height;
 		position: relative;
 
-		&:not(:empty) {
-			margin: 0 #{-$gutter-width / 2};
+		@media (min-width: $xxs) {
+			min-height: fluid($min-height, $max-height, $xxs, $xxl);
 		}
 
-		@media (min-width: $s) {
-			min-height: fluid($min-height, $max-height, $s, $l);
+		@media (min-width: $m) {
+			&:not(:empty) {
+				margin: 0 #{-$gutter-width / 2};
+			}
 		}
 
-		@media (min-width: $l) {
+		@media (min-width: $xxl) {
 			min-height: $max-height;
 		}
 	}
@@ -42,11 +44,11 @@
 			font-weight: 700;
 		}
 
-		@media (min-width: $s) {
-			font-size: fluid($font-size-min, $font-size-max, $s, $l);
+		@media (min-width: $xxs) {
+			font-size: fluid($font-size-min, $font-size-max, $xxs, $xxl);
 		}
 
-		@media (min-width: $l) {
+		@media (min-width: $xxl) {
 			font-size: $font-size-max;
 		}
 	}
@@ -77,10 +79,10 @@
 			right: 0;
 
 			@media (min-width: $m) {
-				height: fluid($height-min, $height-max, $s, $l);
+				height: fluid($height-min, $height-max, $xxs, $xxl);
 			}
 
-			@media (min-width: $l) {
+			@media (min-width: $xxl) {
 				height: $height-max;
 			}
 		}

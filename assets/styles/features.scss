@@ -1,0 +1,72 @@
+.features {
+	table-layout: fixed;
+	width: 100%;
+
+	&__item {
+		&:not(:last-child) {
+			> td,
+			> th {
+				$padding-bottom-max: 75px;
+				$padding-bottom-min: ($padding-bottom-max / 100 * ($fibo-asymp-xxl * 100));
+				padding-bottom: $padding-bottom-min;
+
+				@media (min-width: $xxs) {
+					padding-bottom: fluid($padding-bottom-min, $padding-bottom-max, $s, $xxl);
+				}
+
+				@media (min-width: $xxl) {
+					padding-bottom: $padding-bottom-max;
+				}
+			}
+		}
+	}
+
+	&__media {
+		padding: 0;
+		text-align: center;
+		vertical-align: middle;
+
+		@media (min-width: $l) {
+			width: 116px;
+		}
+	}
+
+	&__info {
+		$font-size-max: 38px;
+		$font-size-min: ($font-size-max / 100 * ($fibo-asymp-xxxl * 100));
+		$padding-left-max: 59px;
+		$padding-left-min: ($padding-left-max / 100 * ($fibo-asymp-xxl * 100));
+		color: $black;
+		font-family: $font-family;
+		font-size: $font-size-min;
+		font-weight: 700;
+		line-height: (38 / 30);
+		padding-bottom: 0;
+		padding-left: $padding-left-min;
+		padding-right: 0;
+		padding-top: 0;
+		text-align: left;
+		vertical-align: middle;
+		width: 85%;
+
+		@media (min-width: $xxs) {
+			font-size: fluid($font-size-min, $font-size-max, $s, $xxl);
+			padding-left: fluid($padding-left-min, $padding-left-max, $s, $xxl);
+		}
+
+		@media (min-width: $l) {
+			width: auto;
+		}
+
+		@media (min-width: $xxl) {
+			font-size: $font-size-max;
+			padding-left: $padding-left-max;
+		}
+	}
+
+	&__img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+}

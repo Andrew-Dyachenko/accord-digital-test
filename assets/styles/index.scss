@@ -6,7 +6,9 @@
 
 @import './header';
 @import './menu';
-@import './main.scss';
+@import './main';
+@import './features';
+@import './regidron-bio';
 
 html {
 	height: 100%;
@@ -19,4 +21,10 @@ body {
 
 * {
 	box-sizing: content-box;
+}
+
+.l-visible {
+	@media (max-width: $l - 1) {
+		display: none;
+	}
 }

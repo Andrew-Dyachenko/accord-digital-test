@@ -36,9 +36,16 @@ $black: #000;
 $white: #fff;
 $energy-yellow: #f7d14c;
 
-$s: 320px;
-$m: 600px;
-$l: 1705px; // Mockup content width
+$xxxs: 0;
+$xxs:  320px;
+$xs:   480px;
+$s:    600px;
+$m:    768px;
+$l:    960px;
+$xl:   1280px;
+$xxl:  1600px;
+$xxxl: 1920px; // Mockup content width
+
 
 @import '../mix/fonts';
 
@@ -75,6 +82,6 @@ $font-path: '../assets/fonts/HelveticaNeue/';
 
 %container {
 	margin: 0 auto;
-	max-width: $l + $global-padding * 2;
+	max-width: $xxl + $global-padding * 2;
 	padding: 0 $global-padding;
 }

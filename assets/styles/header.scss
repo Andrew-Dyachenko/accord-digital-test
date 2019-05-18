@@ -31,11 +31,11 @@
 		text-decoration: none;
 		white-space: nowrap;
 
-		@media (min-width: $s) {
-			font-size: fluid($font-size-min, $font-size-max, $s, $l);
+		@media (min-width: $xxs) {
+			font-size: fluid($font-size-min, $font-size-max, $s, $xxl);
 		}
 
-		@media (min-width: $l) {
+		@media (min-width: $xxl) {
 			font-size: $font-size-max;
 		}
 	}
@@ -47,19 +47,5 @@
 	&__menu {
 		align-self: stretch;
 		flex-grow: 1;
-
-		/* &:not(:empty) {
-			$margin-left-min: 0;
-			$margin-left-max: 27px;
-			margin-left: $margin-left-min;
-
-			@media (min-width: $s) {
-				margin-left: fluid($margin-left-min, $margin-left-max, $s, $l);
-			}
-
-			@media (min-width: $l) {
-				margin-left: $margin-left-max;
-			}
-		} */
 	}
 }
